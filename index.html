@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio Website Design | Codehal</title>
+                <!--  Agrega el SDK de EmailJS -->
+
+                <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            (function(){
+              emailjs.init({
+                publicKey: "zCmjhDtymOKgzUVIG",
+              });
+            })();
+            </script>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS (con Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+  </head>
+
+  <body>
+      <!-- header design -->
+      <header class="header">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="#" class="logo">Vizcatch Analytics</a>
+        <img src="images/logo.jpeg" alt="Company Logo" class="logo-img">
+
+        <nav class="navbar">
+          <a href="#inicio" class="active"><i class='bx bx-home'></i> Inicio</a>
+          <a href="#acerca"><i class='bx bx-info-circle'></i> Acerca</a>
+          <a href="#servicios"><i class='bx bx-cog'></i> Servicios</a>
+          <a href="#proyectos"><i class='bx bx-folder'></i> Proyectos</a>
+          <a href="#contacto"><i class='bx bx-envelope'></i> Contacto</a>
+        </nav>
+      </header>
+      
+    <!-- inicio section design -->
+     <section class="inicio" id="inicio">
+      <div class="inicio-content">
+        <h3>Bienvenidos, Somos</h3>
+        <h1>Vizcatch Analytics</h1>
+        <h3>Realizamos <span class="multiple-text"></span></h3>
+        <p>En Vizcatch Analytics, transformamos datos en estrategias inteligentes. Con nuestras soluciones avanzadas de análisis, ayudamos a empresas a tomar decisiones basadas en información precisa y en tiempo real.</p>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/company/vizcatch-analytics/"><i class='bx bxl-linkedin'></i></a>
+          <a href="#"><i class='bx bxl-github'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+      </div>
+      <a href = "#" class="btn">Mas información</a>
+      </div>
+      
+      <div class="inicio-img">
+        <img src="images/inicio.png" alt="">
+      </div>
+     </section>
+
+<!-- Sección Acerca -->
+<section class="acerca" id="acerca">
+  <div class="acerca-img">
+    <img src="images/inicio.png" alt="">
+  </div>
+
+  <div class="acerca-content">
+    <h2 class="heading">Acerca <span>De</span></h2>
+    <h3>Vizcatch Analytics!</h3>
+    <p>
+      En Vizcatch Analytics, creemos en el potencial de los datos para revolucionar negocios. Nuestro equipo de expertos en ciencia de datos, inteligencia artificial y desarrollo de software trabaja para ofrecer soluciones innovadoras y personalizadas.
+    </p>
+    <a href="#mision-vision" id="btn-ver-mas" class="btn">Ver más</a>
+  </div>
+</section>
+
+<!-- Sección Misión y Visión -->
+<section class="mision-vision d-none" id="mision-vision">
+  <div class="contenedor">
+    <h2 id="titulo">Nuestra <span>Misión y Visión</span></h2>
+
+    <div class="info-mv">
+      <div class="caja">
+        <div class="icono">🎯</div>
+        <h3>Misión</h3>
+        <p>
+          En Vizcatch, nuestra misión es ofrecer soluciones digitales de alta calidad que optimicen los procesos y maximicen el potencial de las organizaciones. A través de un enfoque personalizado, desarrollamos software, aplicaciones web y móviles, y plataformas inteligentes que resuelven las necesidades específicas de nuestros clientes, impulsando su crecimiento y eficiencia.
+        </p>
+        <p>
+          Nos comprometemos a trabajar de cerca con nuestros clientes, brindando soluciones innovadoras y seguras que mejoren la experiencia del usuario, asegurando escalabilidad y flexibilidad en cada proyecto.
+        </p>
+      </div>
+
+      <div class="caja">
+        <div class="icono">🌐</div>
+        <h3>Visión</h3>
+        <p>
+          Nuestra visión es consolidarnos como una de las empresas más innovadoras en el desarrollo de software y soluciones digitales en Latinoamérica. Queremos ser reconocidos por nuestra capacidad de transformar negocios mediante tecnología de vanguardia, contribuyendo al crecimiento sostenible de las empresas.
+        </p>
+        <p>
+          En Vizcatch, aspiramos a ser el socio estratégico de nuestros clientes, anticipándonos a las tendencias y ofreciendo soluciones digitales que no solo resuelvan problemas, sino que inspiren nuevas formas de operar, conectar y crecer en un mundo cada vez más digital.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Servicios section design -->
+     <section class="servicios" id="servicios">
+      <h2 class="heading">Nuestros <span>Servicios</span></h2>
+
+      <div class="servicios-container">
+        <div class="servicios-box">
+          <i class='bx bx-code-alt'></i>
+          <h3>Desarrollo de Software</h3>
+          <p>Creamos aplicaciones personalizadas que optimizan tus procesos y mejoran la eficiencia de tu negocio.</p>
+            <a href="#proyectos" class="btn">Ver mas</a>
+      </div>
+
+      <div class="servicios-box">
+        <i class="bx bx-paint"></i>
+        <h3>Diseño y Desarrollo Web</h3>
+        <p>Diseñamos páginas web modernas, responsivas y optimizadas para motores de búsqueda (SEO).</p>
+          <a href="#proyectos" class="btn">Ver mas</a>
+      </div>
+
+      <div class="servicios-box">
+        <i class="bx bx-bar-chart-alt"></i>
+        <h3>Aplicaciones Móviles</h3>
+        <p>Implementamos soluciones en la nube para mejorar la escalabilidad y seguridad de tu negocio.</p>
+          <a href="#proyectos" class="btn">Ver mas</a>
+      </div>
+
+     </section>
+
+<!-- proyectos section design -->
+<section class="proyectos" id="proyectos">
+  <h2 class="heading">Nuestros <span>Proyectos</span></h2>
+
+  <div class="proyectos-container">
+    <div class="proyectos-box">
+      <img src="images/proyecto6.webp" alt="">
+      <div class="proyectos-layer">
+        <h4>Plataforma de E-commerce</h4>
+        <p>Desarrollo de una plataforma de comercio electrónico para una marca de moda.</p>
+        <a href="javascript:void(0);" onclick="mostrarModal('modal1')"><i class="bx bx-link-external"></i></a>
+      </div>
+    </div>
+
+    <div class="proyectos-box">
+      <img src="images/proyecto2.webp" alt="">
+      <div class="proyectos-layer">
+        <h4>Aplicación Móvil de Salud</h4>
+        <p>App móvil para seguimiento de hábitos saludables y fitness.</p>
+        <a href="javascript:void(0);" onclick="mostrarModal('modal2')"><i class="bx bx-link-external"></i></a>
+      </div>
+    </div>
+
+    <div class="proyectos-box">
+      <img src="images/proyecto3.webp" alt="">
+      <div class="proyectos-layer">
+        <h4>Sistema de Gestión Empresarial</h4>
+        <p>Software personalizado para la gestión de inventarios y ventas.</p>
+        <a href="javascript:void(0);" onclick="mostrarModal('modal3')"><i class="bx bx-link-external"></i></a>
+      </div>
+    </div>
+
+    <div class="proyectos-box">
+      <img src="images/proyecto4.webp" alt="">
+      <div class="proyectos-layer">
+        <h4>App de Delivery</h4>
+        <p>Aplicación móvil para pedidos y entregas de comida rápida, con integración de pagos en línea y seguimiento en tiempo real.</p>
+        <a href="javascript:void(0);" onclick="mostrarModal('modal4')"><i class="bx bx-link-external"></i></a>
+      </div>
+    </div>
+
+    <div class="proyectos-box">
+      <img src="images/proyecto1.webp" alt="">
+      <div class="proyectos-layer">
+        <h4>Aplicación de Reservas</h4>
+        <p>Plataforma de reservas en línea para un restaurante gourmet, que permite a los clientes reservar mesas y gestionar sus reservas de manera sencilla.</p>
+        <a href="javascript:void(0);" onclick="mostrarModal('modal5')"><i class="bx bx-link-external"></i></a>
+      </div>
+    </div>
+
+    <div class="proyectos-box">
+      <img src="images/proyecto5.webp" alt="">
+      <div class="proyectos-layer">
+        <h4>Sistema de Reserva de Citas Médicas</h4>
+        <p>Plataforma en línea para la reserva de citas médicas, con integración de calendarios, recordatorios automáticos y gestión de pacientes.</p>
+        <a href="javascript:void(0);" onclick="mostrarModal('modal6')"><i class="bx bx-link-external"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL 1 - E-COMMERCE -->
+<div id="modal1" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <span class="cerrar" onclick="cerrarModal('modal1')">&times;</span>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img src="images/proyecto6.webp" alt="Plataforma E-commerce Enterprise" class="project-thumbnail">
+          <div class="tech-stack">
+            <span class="tech-icon" title="MongoDB"><i class="fas fa-database"></i></span>
+            <span class="tech-icon" title="Express"><i class="fab fa-node-js"></i></span>
+            <span class="tech-icon" title="React"><i class="fab fa-react"></i></span>
+            <span class="tech-icon" title="Node.js"><i class="fab fa-node"></i></span>
+            <span class="tech-icon" title="AWS"><i class="fab fa-aws"></i></span>
+          </div>
+        </div>
+        <div class="modal-info">
+          <div class="project-header">
+            <h2><i class="fas fa-shopping-cart"></i> NexusCommerce Platform</h2>
+            <span class="project-badge enterprise">ENTERPRISE EDITION</span>
+          </div>
+          
+          <div class="project-meta">
+            <span><i class="fas fa-calendar-alt"></i> Q2 2023 Release</span>
+            <span><i class="fas fa-users"></i> 150+ Implementaciones</span>
+            <span><i class="fas fa-chart-line"></i> 35% ROI promedio</span>
+          </div>
+          
+          <p class="project-description">Solución omnicanal certificada PCI DSS Nivel 1 para comercio electrónico B2B2C, con arquitectura serverless y motor de recomendaciones basado en IA. Implementa checkout conversivo de 57 segundos promedio y reducción del 40% en costos operativos.</p>
+          
+          <div class="feature-grid">
+            <div class="feature-card">
+              <i class="fas fa-robot feature-icon"></i>
+              <h4>AI-Powered Search</h4>
+              <p>Búsqueda semántica con NLP y filtros facetados avanzados</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-bolt feature-icon"></i>
+              <h4>Checkout Express</h4>
+              <p>Flujo optimizado con autofill de datos y multicanal</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-chart-pie feature-icon"></i>
+              <h4>Revenue Analytics</h4>
+              <p>Dashboards con 150+ KPIs y predicción de demanda</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-cloud feature-icon"></i>
+              <h4>Cloud Native</h4>
+              <p>Arquitectura microservicios en AWS EKS</p>
+            </div>
+          </div>
+          
+          <div class="project-footer">
+            <span class="integration-label">Integraciones:</span>
+            <span class="integration-badge"><i class="fab fa-shopify"></i> Shopify</span>
+            <span class="integration-badge"><i class="fas fa-credit-card"></i> Stripe</span>
+            <span class="integration-badge"><i class="fab fa-salesforce"></i> Salesforce</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 2 - HEALTHTECH -->
+<div id="modal2" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <span class="cerrar" onclick="cerrarModal('modal2')">&times;</span>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img src="images/proyecto2.webp" alt="HealthTech Platform" class="project-thumbnail">
+          <div class="tech-stack">
+            <span class="tech-icon" title="React Native"><i class="fab fa-react"></i></span>
+            <span class="tech-icon" title="Firebase"><i class="fas fa-fire"></i></span>
+            <span class="tech-icon" title="TensorFlow"><i class="fas fa-brain"></i></span>
+            <span class="tech-icon" title="HIPAA"><i class="fas fa-shield-alt"></i></span>
+          </div>
+        </div>
+        <div class="modal-info">
+          <div class="project-header">
+            <h2><i class="fas fa-heartbeat"></i> HealthConnect Pro</h2>
+            <span class="project-badge medical">HIPAA COMPLIANT</span>
+          </div>
+          
+          <div class="project-meta">
+            <span><i class="fas fa-mobile-alt"></i> iOS & Android</span>
+            <span><i class="fas fa-hospital"></i> 28 instituciones médicas</span>
+            <span><i class="fas fa-user-md"></i> 1,200+ profesionales</span>
+          </div>
+          
+          <p class="project-description">Plataforma integral de salud digital con módulos de telemedicina, historial clínico interoperable (FHIR) y monitoreo remoto de pacientes. Certificada para clase IIa de dispositivos médicos en UE.</p>
+          
+          <div class="feature-grid">
+            <div class="feature-card">
+              <i class="fas fa-video feature-icon"></i>
+              <h4>Telehealth Suite</h4>
+              <p>Videoconsultas HD con herramientas de diagnóstico</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-dna feature-icon"></i>
+              <h4>Genomic Analytics</h4>
+              <p>Integración con 23andMe y AncestryDNA</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-procedures feature-icon"></i>
+              <h4>Remote Monitoring</h4>
+              <p>Conectividad con 50+ dispositivos médicos</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-prescription feature-icon"></i>
+              <h4>e-Prescribing</h4>
+              <p>Recetas digitales con firma biométrica</p>
+            </div>
+          </div>
+          
+          <div class="project-footer">
+            <span class="integration-label">Certificaciones:</span>
+            <span class="integration-badge"><i class="fas fa-shield-virus"></i> HIPAA</span>
+            <span class="integration-badge"><i class="fas fa-gavel"></i> GDPR</span>
+            <span class="integration-badge"><i class="fas fa-certificate"></i> ISO 13485</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 3 - ERP -->
+<div id="modal3" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <span class="cerrar" onclick="cerrarModal('modal3')">&times;</span>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img src="images/proyecto3.webp" alt="Enterprise Resource Planning" class="project-thumbnail">
+          <div class="tech-stack">
+            <span class="tech-icon" title=".NET"><i class="fab fa-microsoft"></i></span>
+            <span class="tech-icon" title="Angular"><i class="fab fa-angular"></i></span>
+            <span class="tech-icon" title="SQL Server"><i class="fas fa-server"></i></span>
+            <span class="tech-icon" title="Azure"><i class="fab fa-microsoft"></i></span>
+          </div>
+        </div>
+        <div class="modal-info">
+          <div class="project-header">
+            <h2><i class="fas fa-project-diagram"></i> OmniERP Suite</h2>
+            <span class="project-badge erp">TIER 1 ERP</span>
+          </div>
+          
+          <div class="project-meta">
+            <span><i class="fas fa-industry"></i> 12 verticales</span>
+            <span><i class="fas fa-globe"></i> 6 países</span>
+            <span><i class="fas fa-cogs"></i> 47 módulos</span>
+          </div>
+          
+          <p class="project-description">Solución ERP multicompany con contabilidad localizada para Latinoamérica y Europa. Motor de procesos BPMN 2.0 y reporting con Power BI Embedded. Reduce ciclos de cierre financiero en 65%.</p>
+          
+          <div class="feature-grid">
+            <div class="feature-card">
+              <i class="fas fa-warehouse feature-icon"></i>
+              <h4>Advanced SCM</h4>
+              <p>Planificación de demanda con algoritmos ML</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-money-bill-wave feature-icon"></i>
+              <h4>Financial Hub</h4>
+              <p>Consolidación multicurrency y IFRS</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-people-arrows feature-icon"></i>
+              <h4>HCM 4.0</h4>
+              <p>Gestión del talento con People Analytics</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-cogs feature-icon"></i>
+              <h4>Low-Code Platform</h4>
+              <p>Customización sin programación</p>
+            </div>
+          </div>
+          
+          <div class="project-footer">
+            <span class="integration-label">Compatibilidad:</span>
+            <span class="integration-badge"><i class="fas fa-file-invoice-dollar"></i> Facturación Electrónica</span>
+            <span class="integration-badge"><i class="fas fa-exchange-alt"></i> EDI</span>
+            <span class="integration-badge"><i class="fas fa-robot"></i> RPA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 4 - DELIVERY -->
+<div id="modal4" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <span class="cerrar" onclick="cerrarModal('modal4')">&times;</span>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img src="images/proyecto4.webp" alt="Logistics Platform" class="project-thumbnail">
+          <div class="tech-stack">
+            <span class="tech-icon" title="Flutter"><i class="fas fa-mobile"></i></span>
+            <span class="tech-icon" title="Kotlin"><i class="fab fa-android"></i></span>
+            <span class="tech-icon" title="Google Maps"><i class="fas fa-map-marked-alt"></i></span>
+            <span class="tech-icon" title="Machine Learning"><i class="fas fa-brain"></i></span>
+          </div>
+        </div>
+        <div class="modal-info">
+          <div class="project-header">
+            <h2><i class="fas fa-truck-fast"></i> SwiftDelivery Enterprise</h2>
+            <span class="project-badge logistics">LOGISTICS 4.0</span>
+          </div>
+          
+          <div class="project-meta">
+            <span><i class="fas fa-route"></i> 27% Optimización rutas</span>
+            <span><i class="fas fa-clock"></i> 98% entregas a tiempo</span>
+            <span><i class="fas fa-percentage"></i> 15% Menor costo logístico</span>
+          </div>
+          
+          <p class="project-description">Plataforma de última milla con algoritmo de enrutamiento dinámico que reduce tiempos de entrega mediante análisis predictivo de tráfico y machine learning. Integración completa con ecosistemas retail.</p>
+          
+          <div class="feature-grid">
+            <div class="feature-card">
+              <i class="fas fa-route feature-icon"></i>
+              <h4>Dynamic Routing</h4>
+              <p>Optimización en tiempo real con variables múltiples</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-map-marked-alt feature-icon"></i>
+              <h4>Live Tracking</h4>
+              <p>Monitoreo GPS con geofencing y ETA preciso</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-id-card-alt feature-icon"></i>
+              <h4>Driver Management</h4>
+              <p>Scoring de conductores con 15 KPIs clave</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-boxes feature-icon"></i>
+              <h4>Smart Dispatching</h4>
+              <p>Asignación automática basada en capacidad</p>
+            </div>
+          </div>
+          
+          <div class="project-footer">
+            <span class="integration-label">Conectores:</span>
+            <span class="integration-badge"><i class="fab fa-uber"></i> Uber Eats</span>
+            <span class="integration-badge"><i class="fas fa-store"></i> POS Retail</span>
+            <span class="integration-badge"><i class="fas fa-warehouse"></i> WMS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 5 - RESERVAS -->
+<div id="modal5" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <span class="cerrar" onclick="cerrarModal('modal5')">&times;</span>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img src="images/proyecto1.webp" alt="Reservation System" class="project-thumbnail">
+          <div class="tech-stack">
+            <span class="tech-icon" title="Vue.js"><i class="fab fa-vuejs"></i></span>
+            <span class="tech-icon" title="Laravel"><i class="fab fa-laravel"></i></span>
+            <span class="tech-icon" title="MySQL"><i class="fas fa-database"></i></span>
+            <span class="tech-icon" title="PWA"><i class="fas fa-mobile-screen"></i></span>
+          </div>
+        </div>
+        <div class="modal-info">
+          <div class="project-header">
+            <h2><i class="fas fa-calendar-check"></i> ReservaPro Suite</h2>
+            <span class="project-badge hospitality">HOSPITALITY TECH</span>
+          </div>
+          
+          <div class="project-meta">
+            <span><i class="fas fa-hotel"></i> 300+ establecimientos</span>
+            <span><i class="fas fa-chart-bar"></i> 22% Incremento ocupación</span>
+            <span><i class="fas fa-sync-alt"></i> Sync en tiempo real</span>
+          </div>
+          
+          <p class="project-description">Sistema de gestión de capacidad con motor de yield management que maximiza ingresos mediante precios dinámicos y control de inventario en tiempo real. Compatible con Opera PMS y protocoles HITIS.</p>
+          
+          <div class="feature-grid">
+            <div class="feature-card">
+              <i class="fas fa-calendar-alt feature-icon"></i>
+              <h4>Smart Calendar</h4>
+              <p>Visualización 3D de espacios con restricciones</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-dollar-sign feature-icon"></i>
+              <h4>Revenue Management</h4>
+              <p>Precios dinámicos según demanda histórica</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-arrow-up feature-icon"></i>
+              <h4>Automated Upselling</h4>
+              <p>Sugerencias contextuales durante booking</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-network-wired feature-icon"></i>
+              <h4>Channel Manager</h4>
+              <p>Sincronización con OTAs y webs directas</p>
+            </div>
+          </div>
+          
+          <div class="project-footer">
+            <span class="integration-label">Integraciones:</span>
+            <span class="integration-badge"><i class="fas fa-bed"></i> Opera PMS</span>
+            <span class="integration-badge"><i class="fab fa-cc-stripe"></i> Stripe</span>
+            <span class="integration-badge"><i class="fab fa-whatsapp"></i> WhatsApp Business</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 6 - CITAS MÉDICAS -->
+<div id="modal6" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <span class="cerrar" onclick="cerrarModal('modal6')">&times;</span>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img src="images/proyecto5.webp" alt="Medical Scheduling" class="project-thumbnail">
+          <div class="tech-stack">
+            <span class="tech-icon" title="HL7"><i class="fas fa-file-medical-alt"></i></span>
+            <span class="tech-icon" title="DICOM"><i class="fas fa-x-ray"></i></span>
+            <span class="tech-icon" title="Python"><i class="fab fa-python"></i></span>
+            <span class="tech-icon" title="Docker"><i class="fab fa-docker"></i></span>
+          </div>
+        </div>
+        <div class="modal-info">
+          <div class="project-header">
+            <h2><i class="fas fa-clipboard-list"></i> MedSchedule Pro</h2>
+            <span class="project-badge healthcare">HL7 CERTIFIED</span>
+          </div>
+          
+          <div class="project-meta">
+            <span><i class="fas fa-clinic-medical"></i> 45 clínicas</span>
+            <span><i class="fas fa-procedures"></i> 65% Reducción no-shows</span>
+            <span><i class="fas fa-shield-alt"></i> Encriptación E2E</span>
+          </div>
+          
+          <p class="project-description">Sistema de gestión clínica con agenda inteligente que reduce inasistencias mediante confirmación automatizada y política de reconfirmación. Integra DICOM para visualización de estudios y firma digital para recetas electrónicas.</p>
+          
+          <div class="feature-grid">
+            <div class="feature-card">
+              <i class="fas fa-calendar-plus feature-icon"></i>
+              <h4>Smart Scheduling</h4>
+              <p>Asignación automática por urgencia y especialidad</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-exchange-alt feature-icon"></i>
+              <h4>Interoperabilidad</h4>
+              <p>Conexión con SIS hospitalarios y EHR</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-video feature-icon"></i>
+              <h4>Telehealth</h4>
+              <p>Videoconsultas con herramientas de diagnóstico</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-chart-line feature-icon"></i>
+              <h4>Predictive Analytics</h4>
+              <p>Modelos para optimizar staff médico</p>
+            </div>
+          </div>
+          
+          <div class="project-footer">
+            <span class="integration-label">Certificaciones:</span>
+            <span class="integration-badge"><i class="fas fa-user-shield"></i> HIPAA</span>
+            <span class="integration-badge"><i class="fas fa-file-contract"></i> GDPR</span>
+            <span class="integration-badge"><i class="fas fa-heartbeat"></i> CE Medical</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonios Section Design -->
+<section class="testimonios" id="testimonios">
+  <h2 class="heading">Nuestros <span>Testimonios</span></h2>
+  <p class="subheading">Lo que nuestros clientes dicen sobre nosotros. Voces que respaldan, resultados que inspiran.</p>
+
+  <div class="testimonios-container">
+    <!-- Testimonio 1 -->
+    <div class="testimonios-box">
+      <div class="testimonio-content">
+        <div class="testimonio-header">
+          <img src="images/perfil1.webp" alt="Jessica Devis" class="testimonio-img">
+          <div class="testimonio-info">
+            <h3>Rene Rolando</h3>
+            <p>@renerolando</p>
+          </div>
+        </div>
+        <p class="testimonio-text">
+          Vizcatch transformó completamente la experiencia digital de nuestros pacientes con una plataforma moderna y fácil de usar. Su equipo fue puntual, profesional y receptivo a nuestras necesidades.
+        </p>
+        <p class="testimonio-fecha">Ver en <strong>X</strong> - 17 de enero de 2024</p>
+      </div>
+    </div>
+
+    <!-- Testimonio 2 -->
+    <div class="testimonios-box">
+      <div class="testimonio-content">
+        <div class="testimonio-header">
+          <img src="images/perfil2.webp" alt="Linde Michele" class="testimonio-img">
+          <div class="testimonio-info">
+            <h3>Victor Garcia</h3>
+            <p>@victorgarcia</p>
+          </div>
+        </div>
+        <p class="testimonio-text">
+          El equipo de Vizcatch entendió perfectamente nuestro objetivo desde el primer día. Nos entregaron una solución escalable y segura que superó nuestras expectativas.
+        </p>
+        <p class="testimonio-fecha">Ver en <strong>X</strong> - 18 de enero de 2024</p>
+      </div>
+    </div>
+
+    <!-- Testimonio 3 -->
+    <div class="testimonios-box">
+      <div class="testimonio-content">
+        <div class="testimonio-header">
+          <img src="images/perfil3.webp" alt="María Joshiash" class="testimonio-img">
+          <div class="testimonio-info">
+            <h3>Jhon Gonzales</h3>
+            <p>@jhongonzales</p>
+          </div>
+        </div>
+        <p class="testimonio-text">
+          Con Vizcatch implementamos nuestra plataforma educativa en tiempo récord. Su enfoque ágil y la calidad de su código nos permiten crecer sin problemas.
+        </p>
+        <p class="testimonio-fecha">Ver en <strong>X</strong> - 19 de enero de 2024</p>
+      </div>
+    </div>
+
+    <!-- Testimonio 4 -->
+    <div class="testimonios-box">
+      <div class="testimonio-content">
+        <div class="testimonio-header">
+          <img src="images/perfil4.webp" alt="Luciano Eurel" class="testimonio-img">
+          <div class="testimonio-info">
+            <h3>Blanca Flores</h3>
+            <p>@blancaflores</p>
+          </div>
+        </div>
+        <p class="testimonio-text">
+          Desde la estrategia UX/UI hasta la implementación técnica, Vizcatch fue un aliado esencial. El tráfico y la conversión de nuestro sitio web aumentaron notablemente.
+        </p>
+        <p class="testimonio-fecha">Ver en <strong>X</strong> - 20 de enero de 2024</p>
+      </div>
+    </div>
+
+    <!-- Testimonio 5 -->
+    <div class="testimonios-box">
+      <div class="testimonio-content">
+        <div class="testimonio-header">
+          <img src="images/perfil5.jpg" alt="Marcel Glock" class="testimonio-img">
+          <div class="testimonio-info">
+            <h3>Joseph Portillo</h3>
+            <p>@josephportillo</p>
+          </div>
+        </div>
+        <p class="testimonio-text">
+          Vizcatch no solo desarrolló un sistema de gestión robusto, también nos ayudó a capacitar a nuestro equipo. Su compromiso va más allá de solo entregar software.
+        </p>
+        <p class="testimonio-fecha">Ver en <strong>X</strong> - 21 de enero de 2024</p>
+      </div>
+    </div>
+
+    <!-- Testimonio 6 -->
+    <div class="testimonios-box">
+      <div class="testimonio-content">
+        <div class="testimonio-header">
+          <img src="images/perfil6.webp" alt="Misha Stam" class="testimonio-img">
+          <div class="testimonio-info">
+            <h3>Natalia Torres</h3>
+            <p>@nataliatorres</p>
+          </div>
+        </div>
+        <p class="testimonio-text">
+          Trabajar con Vizcatch fue una experiencia fluida. Me ofrecieron soluciones personalizadas, comunicación constante y una calidad impecable en cada entrega.
+        </p>
+        <p class="testimonio-fecha">Ver en <strong>X</strong> - 22 de enero de 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--contacto section design -->
+<section class="contacto" id="contacto">
+  <h2 class="heading">Contáctanos <span>Ya!</span></h2>
+
+  <form id="contact-form" onsubmit="sendMail(event)">
+    <div class="input-box">
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+      <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+    </div>
+    <div class="input-box">
+      <input type="number" id="celular" name="celular" placeholder="Número de Celular" required>
+      <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+    </div>
+    <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Tu mensaje" required></textarea>
+    <button type="submit" class="btn btn-primary mt-3">Enviar Mensaje</button>
+  </form>
+</section>
+
+<!-- Modal Estilo Personalizado -->
+<div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title d-flex align-items-center" id="modalConfirmacionLabel">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="var(--main-color)" class="bi bi-check-circle me-2" viewBox="0 0 16 16">
+            <path d="M15.854 7.146a.5.5 0 0 0-.708-.708l-7.096 7.096-3.097-3.096a.5.5 0 0 0-.707.707l3.5 3.5a.5.5 0 0 0 .708 0l7.5-7.5z"/>
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          </svg>
+          ¡Mensaje Enviado!
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="fs-5 text-light">Tu mensaje ha sido enviado correctamente. Te responderemos pronto.</p>
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <button type="button" class="btn btn-outline-light px-4 rounded-pill" style="border-color: var(--bg-color); color: var(--bg-color);" data-bs-dismiss="modal">
+          Aceptar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer Design -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <img src="images/logo.jpeg" alt="Company Logo" class="footer-logo">
+      <p class="footer-description">
+        Conectando tu negocio con la tecnología del futuro.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h3 class="footer-title">Secciones</h3>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Acerca</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contacto">
+      <h3 class="footer-title">Contacto</h3>
+      <ul>
+        <li><i class="bx bx-map"></i> 123 Av.Floral, Puno, Perú</li>
+        <li><i class="bx bx-phone"></i> +51 900970139</li>
+        <li><i class="bx bx-envelope"></i> pepitasbandoleras@gmail.com</li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3 class="footer-title">Redes Sociales</h3>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/vizcatch-analytics/" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Text -->
+  <div class="footer-text">
+    <p>Copyright &copy; 2025 by Vizcacht | All Rights Reserved.</p>
+  </div>
+
+  <!-- Footer Icon Top -->
+  <div class="footer-iconTop">
+    <a href="#inicio"><i class="bx bx-up-arrow-alt"></i></a>
+  </div>
+</footer>
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
